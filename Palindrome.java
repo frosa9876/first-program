@@ -9,7 +9,7 @@ public class Palindrome {
   // post-conditions: return true if the string is a palindrome otherwise return false
   //
   public static Boolean isPalindrome(String s){
-      stringBuilder sb = new StringBuilder(str);
+    stringBuilder sb = new StringBuilder(str);
     sb.reverse();
     string rev = sb.toString();
     if(str.equals(rev)){
