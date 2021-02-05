@@ -26,7 +26,7 @@ public class Palindrome {
   public static void main(String[] args) {
       // define a scanner object to read from System.in
      //
-    Scanner.scan = new Scanner(new file);
+    Scanner.scan = new Scanner(System.in);
       // define a string called word and read the first line from the scanner object
      //
     word w = new word(new file)
