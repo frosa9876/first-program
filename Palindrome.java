@@ -5,43 +5,35 @@
 // Assignment: Program 1
 
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Palindrome {
   
 
-  public static Boolean isPalindrome(String s){
+  public static boolean isPalindrome(String s) {
     
-    s=s.replaceAll("[^a-zA-Z0-9]", "");
-    String Str = new String();
-    stringBuilder sb = new StringBuilder(str);
+    s = s.replace(" ", "");
+    StringBuilder sb = new StringBuilder(s);
     sb.reverse();
-    string rev = sb.toString();
+    return s.equalsIgnoreCase(sb.toString());
     
-    if(str.equals(rev))
-      return true;
-    }else{
-      return false;
-    }
   }
 
+  
   public static void main(String[] args) {
   
-    Scanner scan = new Scanner("testA.txt");
-    String word = new String();
-    word = scan.nextLine();
+    Scanner scanner = new Scanner(System.in);
+    String line = scanner.nextLine();
+    System.out.println(line);
     
-      while (!word.equals("QUIT")){
-        
-        if (isPalindrome(word)== true){
-            System.out.println("the string [" + word + "] IS a palindrome.");
-        }
-        else{
-          
-          System.out.println("the string [" + word + "] IS NOT a palindrome.");
+    while (!line.equals("QUIT")) {
+        if (isPalindrome(line)){
+            System.out.println("the string [" + line + "] IS a palindrome.");
+        }else{
+          System.out.println("the string [" + line + "] IS NOT a palindrome.");
         }
         
-        word = scan.nextLine();
+        line = scanner.nextLine();
         
       }
   }
