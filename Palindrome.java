@@ -36,8 +36,8 @@ public class Palindrome {
     String line = scanner.nextLine();
     //keeps reading lines until the word QUIT is read
     while (!line.equals("QUIT")) {
-      //calls the isPalindrome method passing it the line
-      //based on what this method returns, it will output a message (IS or IS NOT)
+         //calls the isPalindrome method passing it the line
+        //based on what this method returns, it will output a message (IS or IS NOT)
         if (isPalindrome(line)){
             System.out.println("the string [" + line + "] IS a palindrome.");
         }else{
